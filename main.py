@@ -1,16 +1,15 @@
-# This is a sample Python script.
+from tkinter import Tk, Text, Label
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+tk = Tk()
 
+tk.geometry("1000x400")
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+text_window = Text(tk, height=8, width=100)
+text_label = Label(tk, text="Don't stop.")
 
+text_label.config(font=("Courier", 14))
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+text_label.pack()
+text_window.pack()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+tk.mainloop()
